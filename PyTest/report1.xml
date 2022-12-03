@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="Lap-22-2452" name="pytest" skipped="0" tests="9" time="0.115" timestamp="2022-12-01T20:16:23.926753"><testcase classname="test_API" name="test_1" time="0.001" /><testcase classname="test_API" name="test_2" time="0.001" /><testcase classname="test_API" name="test_3" time="0.001"><failure message="AssertionError: Title does not match&#10;assert 'jenkins' is 'Jenkins is CI server'">def test_3():
-        name = "jenkins"
-        title = "Jenkins is CI server"
-&gt;       assert name is title, "Title does not match"
-E       AssertionError: Title does not match
-E       assert 'jenkins' is 'Jenkins is CI server'
-
-test_API.py:14: AssertionError</failure></testcase><testcase classname="test_four" name="test_response_200" time="0.002" /><testcase classname="test_four" name="test_response_400" time="0.001" /><testcase classname="test_second" name="test_login" time="0.001" /><testcase classname="test_second" name="test_checkout" time="0.001" /><testcase classname="test_second" name="test_logout" time="0.001" /><testcase classname="test_three.MyTestCase" name="test_something" time="0.001" /></testsuite></testsuites>
