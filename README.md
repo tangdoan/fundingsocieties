@@ -40,19 +40,20 @@ pip install pytest-xdist
 pip install pytest-parallel
 ```
 Reference: https://pypi.org/
-3. Run the API test suite by:
+
+4. Run the API test suite by:
 ```
-3.1 clone the repo by: 
+4.1 clone the repo by: 
 git clone https://github.com/tangdoan/fundingsocieties.git
-3.2 go to project directory by:
+4.2 go to project directory by:
 cd ../fundingsocieties
 pytest test_API.py -m "API"
 ```
-4. To run the test in parallel: (maximum = 15)
+5. To run the test in parallel: (maximum = 15)
 ```
 pytest test_API.py -n <number_of_parallelism>
 ```
-5. To run each of test case:
+6. To run each of test case:
 ```
 pytest test_API.py -k <test_case_name>
 ```
@@ -115,11 +116,12 @@ pip install selenium
 pip install webdriver-manage
 ```
 Reference: https://pypi.org/
-3. Run the UI test suite by:
+
+4. Run the UI test suite by:
 ```
-3.1 clone the repo by: 
+4.1 clone the repo by: 
 git clone https://github.com/tangdoan/fundingsocieties.git
-3.2 go to project directory by:
+4.2 go to project directory by:
 cd ../fundingsocieties
 pytest test_UI.py -m "UI"
 ```
