@@ -34,12 +34,12 @@ def test_fundingsocieties(setup):
     assert driver.find_element(By.XPATH, "//div[@class='detailCaption' and text()='Default']//preceding::font[1]")
     assert driver.find_element(By.XPATH, "//div[@class='detailCaption' and text()='Financing']//preceding::font[1]")
 
-    logging.info("\nStep4: verify General, Repayment, Disbursement tabs displayed or not")
+    logging.info("\nStep4: Verify General, Repayment, Disbursement tabs displayed or not")
     assert driver.find_element(By.XPATH, "//button[contains(text(),'General')]")
     assert driver.find_element(By.XPATH, "//button[contains(text(),'Repayment')]")
     assert driver.find_element(By.XPATH, "//button[contains(text(),'Disbursement')]")
 
-    logging.info("\nStep5: go to General tab and get the total approved loans, total amount disbursed and default rate")
+    logging.info("\nStep5: Go to General tab and get the total approved loans, total amount disbursed and default rate")
     driver.find_element(By.XPATH, "//button[contains(text(),'General')]").click()
     # Click Total Approved
     driver.find_element(By.XPATH, "//label[contains(text(),'Total approved')]").click()
@@ -48,35 +48,29 @@ def test_fundingsocieties(setup):
     total_approved, amount_disbursed, default_rates, total_repayment_amount, principal_amount, interest_amount, industries = get_data_using_api()
     # Get total approved loans
     logging.info("\nTotal approved loans = {}".format(total_approved))
-    print("\nTotal approved loans = {}".format(total_approved))
 
     # Get Amount Disbursed
     driver.find_element(By.XPATH, "//label[contains(text(),'Amount disbursed')]").click()
     logging.info("\nTotal amount disbursed = {}".format(amount_disbursed))
-    print("\nTotal amount disbursed = {}".format(amount_disbursed))
 
     # Get Default rates
     driver.find_element(By.XPATH, "//label[contains(text(),'Default rate')]").click()
     logging.info("\nDefault rate = {}".format(default_rates))
-    print("\nDefault rate = {}".format(default_rates))
 
     logging.info("\nStep6: Go to Repayment tab and get total repayment amount, principal amount and interest amount")
     driver.find_element(By.XPATH, "//button[contains(text(),'Repayment')]").click()
     logging.info("\nRepayment total = {}".format(total_repayment_amount))
-    print("\nRepayment total = {}".format(total_repayment_amount))
 
     logging.info("\nRepayment Principal = {}".format(principal_amount))
-    print("\nRepayment Principal = {}".format(principal_amount))
 
     logging.info("\nPayment interest = {}".format(interest_amount))
-    print("\nPayment interest = {}".format(interest_amount))
 
     logging.info("\nStep7: Go to Disbursement tab and store all industry names according percentage")
     driver.find_element(By.XPATH, "//button[contains(text(),'Disbursement')]").click()
-    print("\nList of industry names: \n")
+    logging.info("\nList of industry names: \n")
     for i in industries:
         value = str(i.get("count")) + "%" + " " + i.get("indsutryname")
-        print(value)
+        logging.info(value)
 
 
 def get_data_using_api():
