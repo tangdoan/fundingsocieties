@@ -29,10 +29,15 @@ API test is created with:
 * pytest version: 6.1.2
 ### Setup:
 To run this project, install it locally:
-1. Download and install [python](#https://www.python.org/downloads/)
-2. Open your terminal and install pytest:
+1. Download and install python from https://www.python.org/downloads/
+2. Download and install git from https://git-scm.com/downloads
+3. Open your terminal and install necessary packages:
 ```bash
 pip install -U pytest
+pip install pytest-html
+pip install requests
+pip install pytest-xdist
+pip install pytest-parallel
 ```
 3. Run the API test suite by:
 ```
@@ -48,7 +53,7 @@ pytest test_API.py -n <number_of_parallelism>
 ```
 5. To run each of test case:
 ```
-pytest -rA -k <test_case_name>
+pytest test_API.py -k <test_case_name>
 ```
 Please check the list of test case named as below:
 ```
@@ -96,9 +101,16 @@ Web UI test is created with:
 ### Setup for Web UI:
 To run this project, install it locally (please ignore it if you have already done it in above):
 1. Download and install [python](#https://www.python.org/downloads/)
-2. Open your terminal and install pytest:
+2. Open your terminal and install pytest and necessary packages:
 ```bash
 pip install -U pytest
+pip install pytest-html
+pip install requests
+pip install pytest-xdist
+pip install pytest-parallel
+pip install pandas
+pip install selenium
+pip install webdriver-manage
 ```
 3. Run the UI test suite by:
 ```
