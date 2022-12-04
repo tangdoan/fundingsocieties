@@ -10,8 +10,9 @@ This directory contains two parts of an automation testing solution with API tes
     * [Limitation](#limitation)
 * [Part2: Web UI Automation](#part2-web-ui-automation)
     * [Test Scenarios](#test-scenarios)
-    * [Solution](#solution)
-    * [Setup](#setup)
+    * [Solution for Web UI](#solution-for-web-ui)
+    * [Setup for Web UI](#setup-for-web-ui)
+    * [Challenge](#challenge)
 ## Part1: API automaton testing
 ### General requirements:
     ● Write your code in any programming language of your choice
@@ -87,12 +88,12 @@ interest amount
 7. go to Disbursement tab and store all industry names according percentage
 (increasing order)
 ```
-### Solution:
+### Solution for Web UI:
 Web UI test is created with:
 * python version: 3.7.9
 * pytest version: 6.1.2
 * Selenium webdriver
-### Setup:
+### Setup for Web UI:
 To run this project, install it locally (please ignore it if you have already done it in above):
 1. Download and install [python](#https://www.python.org/downloads/)
 2. Open your terminal and install pytest:
