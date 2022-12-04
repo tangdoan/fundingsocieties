@@ -4,16 +4,15 @@ import pandas as pd
 import pytest
 import requests
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
-
-logging.basicConfig(level='DEBUG')
 
 
 @pytest.fixture()
 def setup():
     global driver
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     driver.implicitly_wait(10)
     driver.maximize_window()
     yield
