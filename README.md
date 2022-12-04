@@ -50,7 +50,7 @@ pytest test_API.py -n <number_of_parallelism>
 ```
 pytest -rA -k <test_case_name>
 ```
-Please check the list of test case name as below:
+Please check the list of test case named as below:
 ```
 test_get_list_users
 test_get_single_user
@@ -69,9 +69,9 @@ test_login_unsuccessful
 test_delayed_response
 ```
 ### Limitation:
-Because of the data does not get reflect after creating or deleting or updating,
-We are unable to verify the date after that.
-For e.g: after creating a single user, we should get the user_id and get single user API again to make sure we created successfully.
+Because the data does not get reflected after creating or deleting or updating,
+We are unable to verify the data after that.
+For e.g: after creating a single user, we should get the user_id and dot get_single_user API again to make sure we created successfully.
 
 ## Part2: Web UI Automation:
 ### Test Scenarios:
