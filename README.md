@@ -39,7 +39,7 @@ pip install requests
 pip install pytest-xdist
 pip install pytest-parallel
 ```
-If using python3 version,, please use:
+If using python3 version, please use:
 ```
 pip3 install -U pytest
 pip3 install pytest-html
