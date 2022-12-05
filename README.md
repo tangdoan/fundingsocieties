@@ -39,6 +39,14 @@ pip install requests
 pip install pytest-xdist
 pip install pytest-parallel
 ```
+If using python3 version,, please use:
+```
+pip3 install -U pytest
+pip3 install pytest-html
+pip3 install requests
+pip3 install pytest-xdist
+pip3 install pytest-parallel
+```
 Reference: https://pypi.org/
 
 4. Run the API test suite by:
@@ -111,9 +119,18 @@ pip install pytest-html
 pip install requests
 pip install pytest-xdist
 pip install pytest-parallel
+```
+New pacakges from API part:
+```
 pip install pandas
 pip install selenium
 pip install webdriver-manage
+```
+If using python3, please use:
+```
+pip3 install pandas
+pip3 install selenium
+pip3 install webdriver-manage
 ```
 Reference: https://pypi.org/
 
