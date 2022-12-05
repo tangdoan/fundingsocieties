@@ -124,13 +124,13 @@ New pacakges from API part:
 ```
 pip install pandas
 pip install selenium
-pip install webdriver-manage
+pip install webdriver-manager
 ```
 If using python3, please use:
 ```
 pip3 install pandas
 pip3 install selenium
-pip3 install webdriver-manage
+pip3 install webdriver-manager
 ```
 Reference: https://pypi.org/
 
